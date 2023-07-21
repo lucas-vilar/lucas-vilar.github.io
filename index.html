@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container about-section" id="about">
+        <div class="about-content">
+            <div class="about-description">
+                <h2>About me</h2>
+                <p>Hi, my name is Lucas Vilar. I am a junior Python developer from Brazil. I have a Master's degree in Microbiology, and a Bachelor's degree in Microbiology and Immunology from Federal University of Rio de Janeiro. I have been doing research in academia for six years, since my first semester in the university. During this time, I have published five scientific papers in international journals (and one manuscript in the submission process as first author), won several awards and grants, and presented my research at national and international conferences. After finishing my Master's, I started my career transition to be a Python developer. To reach this objective, I started a Bachelor's degree in Computer science and did several courses in Python programming. To see my complete CV click here.</p>
+            </div>
+            <div class="about-image">
+                <!-- Substitua o "caminho/para/imagem" pela URL da sua foto -->
+                <img src="media/profile_picture.jpg" alt="Minha Foto" width="500" height="500">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="education">
+        <h2>Education</h2>
+        
+        <div class="degree">
+            <h3>2021 - 2023: Master of Science in Microbiology</h3>
+            <p>Federal University of Rio de Janeiro</p>
+        </div>    
+            <div class="degree">
+            <h3>2023 - Present: Bachelor degree in Computer Science</h3>
+            <p>Estácio de Sá University</p>
+        </div>
+        
+        <div class="degree">
+            <h3>2018 - 2021: Bachelor of Science in Microbiology and Immunology (with Honors)</h3>
+            <p>Federal University of Rio de Janeiro</p>
+        </div>
+    </div>
+
+    <div class="container" id="research">
+        <h2>Research experience</h2>
+        
+        <div class="work">
+            <h3>2021 - 2023: Federal University of Rio de Janeiro</h3>
+            <p>deMarval’s Lab</p>
+            <p>Detection and characterization of prophages from Coagulase-negative staphylococci isolated from Guanabara Bay, Brazil</p>
+        </div>    
+        
+        <div class="work">
+            <h3>2020 - 2021: Federal University of Rio de Janeiro</h3>
+            <p>Moreira’s Lab</p>
+            <p>Molecular epidemiology of pandemic Escherichia coli lineages</p>
+        </div>  
+
+        <div class="work">
+            <h3>2018 - 2020: Federal University of Rio de Janeiro</h3>
+            <p>Moreira’s Lab</p>
+            <p>Acquisition of antimicrobial resistance determinants in Enterobacterales by international travelers from Rio de Janeiro, Brazil</p>
+        </div>  
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Portfolio</h2>
+
+        <div class="project">
+            <h3>Minha biblioteca virtual</h3>
+            <video width="640" height="480" controls>
+                <source src="media/minha_biblioteca_virtual_demonstration.mp4" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+            <p>Desktop (and portuguese) version of "My virtual bookshelf" (see below).</p>
+            <p>This was my first Python project after doing Codecademy Python courses. I had the chance to put my knowledge into practice, and also learn how to use PyQt5 to create GUI applications and work with SQLite3 in Python.</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/minha_biblioteca_virtual">Minha biblioteca virtual</a></p>
+        </div>
+
+        <div class="project">
+            <h3>yVideo Downloader</h3>
+            <video width="640" height="480" controls>
+                <source src="media/y_video_downloader_demonstration.mp4" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+            <p>yVideo Downloader is a user friendly program to download videos from YouTube.</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/yvideo_downloader">yVideo Downloader</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Python tools</h3>
+            <p>Three command line tools developed in Python for learning purposes: Password generator, hash generator, and hash comparison</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/python_tools">Python tools</a></p>
+        </div>
+
+        <div class="project">
+            <h3>My virtual bookshelf</h3>
+            <img src="media/my_virtual_bookshelf.png" alt="my_virtual_bookshelf" width="960" height="480">
+            <p>My virtual bookshelf is a Book collection management system wep app, where users can manage their collection, create reading goals, and organize their future readings.</p>
+            <p>This was my first project using Django framework.</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/my_virtual_bookshelf">My virtual bookshelf</a></p>
+            <p>Project website: <a href="http://lucasvilar.pythonanywhere.com/">https://lucasvilar.pythonanywhere.com/</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Million Game</h3>
+            <img src="media/million_game.png" alt="million_game" width="860" height="480">
+            <p>Million Game is an online game based on the most famous brazilian television game show named "Show do milhão".</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/million_game">Million game</a></p>
+            <p>Project website: <a href="http://lucasvilar2.pythonanywhere.com/">https://lucasvilar2.pythonanywhere.com/</a></p>
+        </div>
+
+        <div class="project">
+            <h3>My weather</h3>
+            <img src="media/my_weather.png" alt="my_weather" width="900" height="480">
+            <p>My weather is a website to get any city's current Weather using the Open weather - Current Weather Data API.</p>
+            <p>Github repository for more details: <a href="https://github.com/lucas-vilar/my_weather">My weather</a></p>
+            <p>Project website: <a href="http://lucasvilar3.pythonanywhere.com/">https://lucasvilar3.pythonanywhere.com/</a></p>
+        </div>
+
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <div class="github-content">
+            <a href="https://github.com/lucas-vilar" class="github-content">
+                <div class="github-content-picture">
+                    <img src="media/github.png" alt="github" height="50" width="50">
+                </div>
+                <div class="github-content-text">    
+                    <p>Github</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="linkedin-content">
+            <a href="https://www.linkedin.com/in/lucas-vilar-b73aa9188/" class="linkedin-content">
+                <div class="linkedin-content-picture">
+                    <img src="media/linkedin.png" alt="linkedin" height="35" width="35">
+                </div>
+                <div class="linkedin-content-text">    
+                    Linkedin
+                </div>
+            </a>    
+        </div>
+
+        <div class="gmail-content">
+            <div class="gmail-content-picture">
+                <img src="media/gmail.png" alt="gmail" height="35" width="65">
+            </div>
+            <div class="gmail-content-text">    
+                <p>lucas.vilar12@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

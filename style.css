@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fundo branco */
+}
+
+:root {
+    --primary-color: #333333  ; /* Amarelo */
+    --secondary-color: #333; /* Preto */
+    --highlight-color: #999; /* Cinza claro para destacar os links */
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: var(--highlight-color); /* Alterar a cor do texto */
+    transition: color 0.3s; /* Adicionar uma transição suave */
+}
+
+.degree, .work, .project {
+    margin-bottom: 5rem;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    opacity: 0; /* Inicia com opacidade 0 para aplicar a animação */
+    animation: fadeIn 1s ease-in-out forwards; /* Efeito "fade in" ao mostrar na tela */
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.about-section {
+    background-color: var(--primary-color); /* Fundo amarelo */
+    color: #333;
+    text-align: center;
+    height: 100vh; /* Ocupa a tela inteira verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin: 0;
+    font-family: 'Poppins', 'Times New Roman';
+}
+
+/* Seção "Sobre Mim" */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-description {
+    flex: 1;
+    margin-right: 10rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%; /* Para tornar a imagem circular */
+}
+
+/* Estilo para os projetos */
+.project {
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.github-content, .linkedin-content, .gmail-content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0.5rem;
+}
+
+.github-content-picture {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.1rem;
+}
+
+.linkedin-content-text {
+    margin-left: 0.4rem;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+
+.linkedin-content-picture {
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.gmail-content-text {
+    align-items: start;
+}
+
+.gmail-content-picture {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.github-content a, .linkedin-content a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* Animação "fade in" */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
