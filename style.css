@@ -36,9 +36,18 @@ nav a {
     margin: 0 1rem;
 }
 
+span {
+    font-weight: bolder;
+}
+
 nav a:hover {
     color: var(--highlight-color); /* Alterar a cor do texto */
     transition: color 0.3s; /* Adicionar uma transição suave */
+}
+
+.cv {
+    text-decoration: none;
+    color: #fff;
 }
 
 .degree, .work, .project {
