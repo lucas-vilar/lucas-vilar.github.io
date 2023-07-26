@@ -105,7 +105,7 @@ span {
 
 .gmail-button {
     position: absolute;
-    margin-left: 15rem;
+    margin-left: 10rem;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
@@ -126,7 +126,7 @@ span {
 
 .github-button {
     position: absolute;
-    margin-left: 19rem;
+    margin-left: 14rem;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
@@ -146,7 +146,7 @@ span {
 
 .linkedin-button {
     position: absolute;
-    margin-left: 23rem;
+    margin-left: 19rem;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
@@ -263,13 +263,13 @@ span {
 }
 
 .video-player {
-    max-width: 400px;
-    max-height: 225px;
+    max-width: 320px;
+    max-height: 180px;
 }
 
 .project-screen {
-    max-width: 400px;
-    max-height: 225px;
+    max-width: 320px;
+    max-height: 180px;
 }
 
 .github_button {
