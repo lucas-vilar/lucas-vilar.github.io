@@ -26,7 +26,7 @@ header {
 nav {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: flex-end;;
+    justify-content: flex-end;
     padding: 1rem;
 }
 
@@ -40,6 +40,23 @@ span {
     font-weight: bolder;
 }
 
+strong {
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.01rem;
+      right: -0.01rem;
+      height: 0.75rem;
+      z-index: -1;
+      background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+}
+  
 nav a:hover {
     color: var(--highlight-color); 
     transition: color 0.3s; 
@@ -57,8 +74,6 @@ nav a:hover {
 .container {
     padding-left: 2rem;
     padding-right: 2rem;
-    opacity: 0; 
-    animation: fadeIn 1s ease-in-out forwards; 
 }
 
 .container h2 {
@@ -82,6 +97,8 @@ nav a:hover {
 .about-content {
     display: flex;
     flex-wrap: wrap;
+    opacity: 0; 
+    animation: fadeIn 3s ease-in-out forwards; 
 }
 
 .about-description {
@@ -104,53 +121,205 @@ nav a:hover {
     border-radius: 50%; 
 }
 
+/* Estilizar o botão circular */
+.gmail-button {
+    position: absolute;
+    margin-left: 26rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s;
+    min-height: 35px;
+}
 
-.project {
-    margin-bottom: 2rem;
-    border: 1px solid var(--primary-color);
-    padding: 1rem;
+/* Efeito de hover para o botão circular */
+.gmail-button:hover {
+    background-color: #000; /* Alterar a cor do botão ao passar o mouse */
+}
+
+.gmail-button img {
+    max-height: 25px; /* Ajustar o tamanho da imagem dentro do botão */
+}
+
+.github-button {
+    position: absolute;
+    margin-left: 34rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s;
+}
+
+/* Efeito de hover para o botão circular */
+.github-button:hover {
+    background-color: #000; /* Alterar a cor do botão ao passar o mouse */
+}
+
+.github-button img {
+    width: 35px; /* Ajustar o tamanho da imagem dentro do botão */
+}
+
+.linkedin-button {
+    position: absolute;
+    margin-left: 30rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s;
+}
+
+/* Efeito de hover para o botão circular */
+.linkedin-button:hover {
+    background-color: #000; /* Alterar a cor do botão ao passar o mouse */
+}
+
+.linkedin-button img {
+    width: 35px; /* Ajustar o tamanho da imagem dentro do botão */
+}
+
+.degrees{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.degree {
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 3px solid #333;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.github-content, .linkedin-content, .gmail-content {
+.university_logo {
     display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 0.5rem;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.github-content-picture {
+.research_list {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding-left: 20px;
+}
+
+.research_list li {
+    padding-left: 35px; /* Adiciona um espaçamento à esquerda para acomodar o ícone */
+    background-image: url('media/microscope.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px; /* Define o tamanho do ícone */
+}
+
+.skills{
     display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 0.1rem;
-}
-
-.linkedin-content-text {
-    margin-left: 0.4rem;
-    align-items: center;
-    margin-top: 0.2rem;
-}
-
-.linkedin-content-picture {
-    margin-left: 0.5rem;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.gmail-content-text {
+    flex-flow: row wrap;
     align-items: start;
 }
 
-.gmail-content-picture {
+.skill {
     display: flex;
-    justify-content: left;
+    flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 3px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.github-content a, .linkedin-content a{
-    color: #000;
-    text-decoration: none;
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 4px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.project-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.project-details {
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.project-video {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+}
+
+.github_button {
+	box-shadow: -1px 11px 15px 3px #b5b5b5;
+	background:linear-gradient(to bottom, #000000 5%, #7d7d7d 100%);
+	background-color:#000000;
+	border-radius:20px;
+	border:2px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:5px 53px;
+	text-decoration:none;
+}
+.github_button:hover {
+	background:linear-gradient(to bottom, #7d7d7d 5%, #000000 100%);
+	background-color:#7d7d7d;
+}
+.github_button:active {
+	position:relative;
+	top:1px;
+}
+
+.project-screen {
+    border: 2px solid black;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    background-color: var(--primary-color);
+    color: #fff;
+    align-items: end;
+    justify-content: end;
+    padding-top: 1rem;
+    padding-right: 1rem;
 }
 
 @keyframes fadeIn {
